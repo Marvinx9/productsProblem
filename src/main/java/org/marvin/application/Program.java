@@ -9,11 +9,11 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Program {
+    private static final SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
     public static void main(String[] args) throws ParseException {
 
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
         System.out.print("Enter the number of products: ");
         int n = sc.nextInt();
